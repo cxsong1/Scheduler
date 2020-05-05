@@ -10,10 +10,39 @@
 
 <h4><span class="category">Event </span> <span  class="category">Date</span><span class="category">Location</span></h4>
 <ul>
-    <li><input type="checkbox">List Element 1</li>
-    <li><input type="checkbox">List Element 2</li>
+    <li>
+      <input type="checkbox">
+      <span class="event">Event 1</span>
+      <span class="date">Date 1</span>
+      <span class="location">Location 1</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span class="event">Event 2</span>
+      <span class="date">Date 2</span>
+      <span class="location">Location 2</span>
+    </li>
 </ul>
 
+<form>
+  <div>
+    <label>Event: </label>
+    <input type="text" id="eventName" name="eventName">
+  </div>
+  <div>
+    <label >Date: </label>
+    <input type="date" id="eventDate" name="eventDate">
+  </div>
+  <div>
+    <label>Location: </label>
+    <!--Set input as text for NOW-->
+    <input type="text" id="eventLoc" name="eventLoc">
+  </div>
+
+</form>
+
 <button>Add Event</button>
+<button>Delete Event</button>
+
 </body>
 </html>
