@@ -2,52 +2,54 @@
 <html>
 <head>
   <title>List</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <link rel="stylesheet" type="text/css" href="generalLayout.css">
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div><h1>List Name</h1></div>
+<div class="container" id="list">
+<h1>List Name</h1>
 
-<h4><span class="category">Event </span> <span  class="category">Date</span><span class="category">Location</span></h4>
-<ul>
-    <li>
-      <input type="checkbox">
-      <span class="event">Event 1</span>
-      <span class="date">Date 1</span>
-      <span class="location">Location 1</span>
-    </li>
-    <li>
-      <input type="checkbox">
-      <span class="event">Event 2</span>
-      <span class="date">Date 2</span>
-      <span class="location">Location 2</span>
-    </li>
-</ul>
+<div class="list-grid">
+  <div></div>
+  <div class="heading">Event</div>
+  <div class="heading">Date</div>
+  <div class="heading">Location</div>
+  <div><input type="checkbox" class="checkbox"></div>
+  <div class="eventInput">Event 1</div>
+  <div class="eventInput">Date 1</div>
+  <div class="eventInput">Location 2</div>
+  <div><input type="checkbox" class="checkbox"></div>
+  <div class="eventInput">Event 2</div>
+  <div class="eventInput">Date 2</div>
+  <div class="eventInput">Location 2</div>
+  <div><button class="btn btn-success" id="addButton">Add</button></div>
+  <div><input class="newInput" type="text" placeholder="ex. Meeting with Patrick"></div>
+  <div><input class="newInput" type="date"></div>
+  <div><input class="newInput" id="location" type="text" placeholder="1111 Broadway Ave, Vancouver, BC"></div>
+</div>
 
-<br>
-<form>
-  <div>
-    <label>Event: </label>
-    <input type="text" id="eventName" name="eventName">
-  </div>
-  <div>
-    <label >Date: </label>
-    <input type="date" id="eventDate" name="eventDate">
-  </div>
-  <div>
-    <label>Location: </label>
-    <!--Set input as text for NOW-->
-    <input type="text" id="eventLoc" name="eventLoc">
-  </div>
+<!-- <div id="eventForm">
+  <button class="btn btn-success">Add</button>
+  <input class="newInput" type="text" placeholder="ex. Meeting with Patrick">
+  <input class="newInput" type="date"> 
+  <input class="newInput" id="location" type="text" placeholder="1111 Broadway Ave, Vancouver, BC">
+</div> -->
 
-</form>
-<br>
+<!-- <div class="container">  
+  <form class="form-inline" id="eventForm">
+      <label class="sr-only" for="inputEvent">Event Name</label>
+	    <input type="text" class="form-control" id="inputEvent" placeholder="Event Name">
+      <label class="sr-only" for="inputDate">Date</label>
+      <input type="date" class="form-control" id="inputDate" placeholder="Event Date">
+      <label class="sr-only" for="inputLocation">Event Location</label>
+	    <input type="text" class="form-control" id="inputLocation" placeholder="Event Location">
+    <button type="submit" class="btn btn-success">Done</button>
+  </form>
+</div> -->
 
-<button>Add Event</button>
-<button>Delete Event</button>
-
-
+</div>
 
 </body>
 </html>
