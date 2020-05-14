@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+
+<body>
+ 
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> on-track</a> <!--'#' will take u to top of current page-->
+        </div>
+        <div class="collapse navbar-collapse" id="bs-nav-demo">
+            <!-- notice that u don't add the '#' in this id -->
+            <ul class="nav navbar-nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">My Account</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron">
+		<h1>Welcome to on-track</h1>
+		<p>The site that helps you stay organised</p>
+    </div>
+
+    <h4>Use on-track for...</h4>
+    
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+            <div class="thumbnail">
+                <div class="category category-business"></div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="thumbnail">
+                <div class="category category-school"></div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="thumbnail">
+                <div class="category category-leisure"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+            <p>Business</p>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+           <p>School</p>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <p>Leisure</p>
+        </div>
+    </div>
+
+    <h3>How It All Started...</h3>
+    <p>Bacon ipsum dolor amet frankfurter t-bone bresaola chislic, filet mignon tri-tip strip steak pancetta leberkas turkey kevin kielbasa venison. Jerky ham corned beef bacon kielbasa pig alcatra kevin pork boudin. Doner jowl pancetta chicken fatback, bresaola boudin salami strip steak meatball tongue sausage drumstick turkey. Beef ribs chislic salami fatback ground round.
+
+        Frankfurter drumstick buffalo doner prosciutto. Pancetta pig cupim ribeye. Ham hock pork loin chuck pastrami porchetta alcatra corned beef. Cupim boudin buffalo, alcatra strip steak shank burgdoggen filet mignon. Beef ribs short loin chicken, pastrami salami doner tenderloin hamburger ham sausage andouille ball tip pork belly. Short loin chuck rump doner short ribs, beef strip steak fatback buffalo.
+    </p>
+
+    <h3>Questions or Concerns?</h3>
+    <!--https://mdbootstrap.com/docs/jquery/forms/contact/#html-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
