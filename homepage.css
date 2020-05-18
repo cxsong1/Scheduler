@@ -35,36 +35,22 @@ h2{
     height: 250px; 
     text-align: center;
     font-size: 2em;
-    /*
-    background-size: cover; 
-    background-position: center; 
-    */
+    border: 5px solid #252845;
+    padding: 30px;
 }
 
-/*
-.category-business{
-    background-image: url(https://cdn2.iconfinder.com/data/icons/man-1/100/man-men-18-512.png);
-    
+i{
+    color: #252845;
 }
 
-.category-school{
-    background-image: url(https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80);
-}
-
-.category-leisure{
-    background-image: url(https://images.unsplash.com/photo-1552667466-07770ae110d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-}
-*/
-
-
-.category-business, .category-school, .category-leisure{
+/* .category-business, .category-school, .category-leisure{
     
     box-shadow: 3px 3px 3px rgba(189, 195, 199, 0.5),
                 5px 5px 5px rgba(189, 195, 199, 0.3),
                 10px 10px 10px rgba(189, 195, 199, 0.2);
                 
     padding: 20px 50px;
-}
+} */
 
 .category p{
     margin-top: 20px;
@@ -88,10 +74,6 @@ hr{
 #categories{
     padding-left: 60px;
     padding-right: 60px;
-}
-
-#useOnTrack{
-    margin-top: -150px;
 }
 
 .navbar-text{
