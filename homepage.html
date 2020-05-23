@@ -61,17 +61,14 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="centerPart">
 
-    <nav class="navbar fixed-nav-bar" id="whiteNav">
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li><h2 class="navbar-text">Use on-track for...</h2></li>
-            </ul>
-        </div>
-    </nav>
+    <svg width="100%" height="90px">
+        <rect width="100%" height="90px" style="fill:white;" />
+        <text x="50%" y="70%"  text-anchor="middle" fill="#252845">Use on-track for...</text>
+      </svg>
     
-    <div class="row" id="categories">
+    <div class="row centerElements">
         <div class="col-sm-4 col-xs-12">
             <div class="category">
                 <i class="fas fa-briefcase fa-5x"></i>
@@ -93,33 +90,27 @@
         </div>
     </div>
 
-    <!--
-    <div class="row">
-        <div class="col-sm-4 col-xs-12">
-            <p>Business</p>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-           <p>School</p>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-            <p>Leisure</p>
-        </div>
-    </div>
-    -->
+    <br>
 
     <h2>How It All Started...</h2>
+<<<<<<< HEAD
     <p>
         As computer engineering students, we were constantly struggling to manage our crazy academic schedules while maintaining a balance between
         
         
+=======
+    <p class="centerElements">Bacon ipsum dolor amet frankfurter t-bone bresaola chislic, filet mignon tri-tip strip steak pancetta leberkas turkey kevin kielbasa venison. Jerky ham corned beef bacon kielbasa pig alcatra kevin pork boudin. Doner jowl pancetta chicken fatback, bresaola boudin salami strip steak meatball tongue sausage drumstick turkey. Beef ribs chislic salami fatback ground round.
+
+        Frankfurter drumstick buffalo doner prosciutto. Pancetta pig cupim ribeye. Ham hock pork loin chuck pastrami porchetta alcatra corned beef. Cupim boudin buffalo, alcatra strip steak shank burgdoggen filet mignon. Beef ribs short loin chicken, pastrami salami doner tenderloin hamburger ham sausage andouille ball tip pork belly. Short loin chuck rump doner short ribs, beef strip steak fatback buffalo.
+>>>>>>> 5545c04546185943c1613cc2050396cc1145eec8
     </p>
 
     <h2>Questions or Concerns?</h2>
     <!--https://mdbootstrap.com/docs/jquery/forms/contact/#html-->
-    <div class="row">
+    <div class="row centerElements">
 
         <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
+        <div class="col-xs-12">
             <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
                 <!--Grid row-->
@@ -127,7 +118,7 @@
 
                     <!--Grid column-->
                     <div class="col-md-6">
-                        <div class="md-form mb-0">
+                        <div class="md-form mb-0 form-group">
                             <input type="text" id="name" name="name" class="form-control">
                             <label for="name" class="">Your name</label>
                         </div>
@@ -136,7 +127,7 @@
 
                     <!--Grid column-->
                     <div class="col-md-6">
-                        <div class="md-form mb-0">
+                        <div class="md-form mb-0 form-group">
                             <input type="text" id="email" name="email" class="form-control">
                             <label for="email" class="">Your email</label>
                         </div>
@@ -149,7 +140,7 @@
                 <!--Grid row-->
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="md-form mb-0">
+                        <div class="md-form mb-0 form-group">
                             <input type="text" id="subject" name="subject" class="form-control">
                             <label for="subject" class="">Subject</label>
                         </div>
@@ -163,7 +154,7 @@
                     <!--Grid column-->
                     <div class="col-md-12">
 
-                        <div class="md-form">
+                        <div class="md-form form-group">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message">Your message</label>
                         </div>
@@ -181,6 +172,8 @@
         </div>
         <!--Grid column-->
 </div>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
