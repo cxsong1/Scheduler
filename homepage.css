@@ -35,7 +35,7 @@ h2{
     height: 250px; 
     text-align: center;
     font-size: 2em;
-    border: 5px solid #252845;
+    /* border: 5px solid #252845; */
     padding: 30px;
 }
 
