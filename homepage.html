@@ -8,8 +8,10 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c242731820.js" crossorigin="anonymous"></script>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora:wght@700&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,16 +25,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-            <a href="#" class="navbar-brand">on-track</a> <!--'#' will take u to top of current page-->
+            <a href="#" class="navbar-brand" id="onTrackLogo">on-track</a> <!--'#' will take u to top of current page-->
         </div>
         <div class="collapse navbar-collapse" id="bs-nav-demo">
             <!-- notice that u don't add the '#' in this id -->
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav topNav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right topNav">
                 <li><a href="#"><i class="fa fa-users"></i> Get Started</a></li>
                 <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
             </ul>
@@ -42,16 +44,21 @@
 
 <div class="container-fluid">
     
-    <div class="row">
-        <div class="col-lg-12">
-            <div id="welcome">
+    <div class="row" id="welcome">
+        <div class="col-sm-6">
+            <div>
                 <h1 class="intro">WELCOME</h1>
-                <h2 class="intro" id="introL2">to on-track</h2>
-                <h3 class="intro" id="introL3">The site that helps you stay organised</h3>
-                <hr>
-                <button type="button" class="btn btn-default btn-lg intro">Get Started!</button>
+                <h2 class="intro" id="introL2">TO ON-TRACK</h2>
+                <!-- <h3 class="intro" id="introL3">The site that makes sure YOU stay organised</h3> -->
             </div>
         </div>
+        <!-- <div class="col-sm-6 gettingStarted">
+            <h1></h1>
+            <hr>
+            <h4>WE'RE HERE TO MAKE SURE YOU ALWAYS STAY ON-TRACK</h4>
+            <button type="button" class="btn btn-info btn-lg" id="getStarted">Get Started!</button>
+            <hr>
+        </div> -->
     </div>
 </div>
 
@@ -59,8 +66,13 @@
 
     <svg width="100%" height="90px">
         <rect width="100%" height="90px" style="fill:white;" />
-        <text x="50%" y="70%"  text-anchor="middle" fill="#252845">Use on-track for...</text>
-      </svg>
+        <text x="50%" y="70%"  text-anchor="middle" fill="#c29c99">Use on-track for...</text>
+    </svg>
+
+    <svg width="100%" height="150px" style="margin-left: 10%; margin-top: 50px">
+        <rect width="80%" height="150px"/>
+        <text x="40%" y="60%"  text-anchor="middle" fill="#c29c99">Business</text>
+    </svg>
     
     <div class="row centerElements">
         <div class="col-sm-4 col-xs-12">
